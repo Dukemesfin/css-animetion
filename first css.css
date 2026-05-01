@@ -1,0 +1,154 @@
+body{
+    padding: 0%;
+    margin: 0%;
+    background-color: rgb(92, 88, 88);
+}
+.cont{
+    height: 500px;
+    width: 450px;
+    position: absolute;
+    margin: auto;
+    top: 0%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+}
+.tv{
+    background-color: darkgray;
+    height: 200px;
+    width: 270px;
+    position: relative;
+    top: 200px;
+    left: 90px;
+    border-radius: 15px;
+    
+}
+input[type="checkbox"]{
+    appearance: none;
+    background-color: rgb(12, 12, 12);
+    height:30px;
+    width:30px;
+    border-radius:50%;
+    position: absolute;
+    top:100px;
+    right:15px;
+    border-color:15px solid white;
+    cursor: pointer;
+    outline: none;
+
+}
+.speaker{
+    position: absolute;
+    top: 50px;
+    right: 7px;
+
+}
+.speaker>div{
+    background-color: rgb(71, 59, 59);
+    height: 6px;
+    width: 50px;
+    margin-bottom: 5px;
+    border-radius: 8px;
+}
+.slot{
+    background-color: rgb(85, 75, 75);
+    height: 6px;
+    width: 220px;
+    border-radius: 8px;
+    position: absolute;
+    bottom: 12px;
+    left: 18px;
+}
+.antena{
+    background-color: rgb(55, 42, 42);
+    height: 20px;
+    width: 60px;
+    border-radius: 20px 20px 0 0;
+    position: absolute;
+    top: -20px;
+    left: 50px;
+
+}
+.a{
+    background-color: rgb(150, 138, 138);
+    height: 70px;
+    width: 6px;
+    border-radius: 6px;
+    position: relative;
+
+    
+
+}
+.a:nth-child(1){
+    bottom: 60px;
+    left: 10px;
+    transform: rotate(-30deg);
+
+}
+.a:nth-child(2){
+    bottom: 130px;
+    left: 45px;
+    transform: rotate(30deg);
+}
+.stand1,.stand2{
+    background-color: rgb(52, 45, 45);
+    height: 10px;
+    width: 18px;
+    position: absolute;
+    border-radius: 0 0 15px 15px;
+    bottom: -10px;
+
+
+}
+.stand1{
+    left: 45px;
+
+}
+.stand2{
+    right: 45px;
+}
+input[type="checkbox"]::before{
+content: '';
+
+position: absolute;
+background-color: aqua;
+height: 140px;
+width: 170px;
+position: absolute;
+bottom: -42px;
+right: 45px;
+border-radius: 5px;
+border: 10px solid rgb(94, 84, 84);
+background-size: 125px 140px;
+background-image: linear-gradient(
+    to left,
+    gray 25px,
+    lightgray 25px,
+    darkgray 50px,
+    black  75px,
+    gray 75px,
+    lightgray 100px,
+    darkgray  100px,
+    black 125px
+
+);
+animation: move 20s infinite linear;
+}
+@keyframes move{
+    100%{
+        background-position: 2000px 0;
+
+    }
+}
+input:checked[type="checkbox"]::before{
+    background-size: 100% 100%;
+    animetion:none;
+    background-image: linear-gradient(
+        -45deg,
+        transparent 150px,
+        rgba(255,255,255,0.4)150px,
+        rgba(255,255,255,0.4)180px,
+        transparent 180px
+    );
+}
