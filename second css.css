@@ -1,0 +1,54 @@
+body{
+    padding: 0%;
+    margin: 0%;
+    background-color: rgb(242, 202, 152);
+}
+.cont{
+    height: 300px;
+    width: 300px;
+     position: absolute;
+    margin: auto;
+    top: 0%;
+    bottom: 0;
+    left: 0%;
+    right: 0%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+
+
+
+}
+.eye{
+    transition: transform 0.1s ease-out;
+    background-color: rgb(7, 255, 255);
+    height: 200px;
+    width: 200px;
+    position: relative;
+    top: 100px;
+    left: 100px;
+    border-radius: 50%;
+}
+
+.ball{
+    transition: transform 0.1s ease-out;
+    background-color: black;
+    height: 50px;
+    width: 50px;
+    position: relative;
+    top: 80px;
+    left: 70px;
+    border-radius: 50%;
+}
+.light {
+  width: 300px;
+  height: 300px;
+  /* Creates a soft oval fade */
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.3) 0%, rgba(230, 227, 227, 0) 70%);
+  border-radius: 100%;
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.3) 0%, rgba(201, 197, 197, 0) 70%);
+  border-radius: 100%;
+  position: absolute;
+  top: 150px;
+  bottom: -30px;
+}
+
