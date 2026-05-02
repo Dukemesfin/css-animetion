@@ -14,18 +14,31 @@ body{
     right: 0%;
     background-color: rgb(255, 255, 255);
     border-radius: 50%;
+    overflow: hidden;
 
 
 
 }
+
+
 .eye{
     transition: transform 0.1s ease-out;
     background-color: rgb(7, 255, 255);
     height: 200px;
     width: 200px;
     position: relative;
-    top: 100px;
-    left: 100px;
+    top: 50px;
+    left: 50px;
+    border-radius: 50%;
+     border: 5px solid black;
+}
+.eyelight{
+    background-color: white;
+    height:  40px;
+    width: 40px;
+    position: relative;
+    top: 30px;
+    left: 140px;
     border-radius: 50%;
 }
 
@@ -35,20 +48,74 @@ body{
     height: 50px;
     width: 50px;
     position: relative;
-    top: 80px;
+    top: 40px;
     left: 70px;
     border-radius: 50%;
+    border: 5px solid black;
 }
+
 .light {
-  width: 300px;
-  height: 300px;
-  /* Creates a soft oval fade */
-  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.3) 0%, rgba(230, 227, 227, 0) 70%);
+  width: 200px;
+  height: 150px;
+  background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.093) 0%, rgb(255, 255, 255) 70%);
   border-radius: 100%;
-  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.3) 0%, rgba(201, 197, 197, 0) 70%);
+  background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.134) 0%, rgba(255, 255, 255, 0.693) 70%);
   border-radius: 100%;
   position: absolute;
-  top: 150px;
+  top: 0%;
   bottom: -30px;
 }
+.dot{
+    background-color: white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 10px;
+    left: 20px;
+    
+}
+.dot2{
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: -0px;
+    right: 10px;
+    
+}
+
+.lid {
+  position: absolute;
+  width: 100%;
+  height: 50%; 
+  background-color: rgb(197, 152, 110); 
+  z-index: 10;
+  transition: transform 0.1s ease-in-out;
+}
+
+.lid.top {
+  top: 0;
+  border-radius: 0 0 0 0;
+  animation: openTop 2.5s forwards; 
+}
+
+.lid.bottom {
+  bottom: 0;
+  border-radius: 0 0 0 0;
+  animation: openBottom 2.5s forwards; 
+}
+
+
+@keyframes openTop {
+  0% { transform: translateY(0); }       
+  100% { transform: translateY(-50%); }   
+}
+
+@keyframes openBottom {
+  0% { transform: translateY(0); }        
+  100% { transform: translateY(50%); }   
+}
+
 
