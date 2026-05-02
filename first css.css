@@ -1,7 +1,7 @@
 body{
     padding: 0%;
     margin: 0%;
-    background-color: rgb(92, 88, 88);
+    background-color: rgb(255, 216, 117);
 }
 .cont{
     height: 500px;
@@ -15,7 +15,7 @@ body{
 
 }
 .tv{
-    background-color: darkgray;
+    background-color: rgb(208, 84, 84);
     height: 200px;
     width: 270px;
     position: relative;
@@ -26,7 +26,7 @@ body{
 }
 input[type="checkbox"]{
     appearance: none;
-    background-color: rgb(12, 12, 12);
+    background-color: rgb(202, 176, 176);
     height:30px;
     width:30px;
     border-radius:50%;
@@ -45,14 +45,14 @@ input[type="checkbox"]{
 
 }
 .speaker>div{
-    background-color: rgb(71, 59, 59);
+    background-color: rgb(255, 76, 76);
     height: 6px;
     width: 50px;
     margin-bottom: 5px;
     border-radius: 8px;
 }
 .slot{
-    background-color: rgb(85, 75, 75);
+    background-color: rgb(210, 48, 48);
     height: 6px;
     width: 220px;
     border-radius: 8px;
@@ -61,7 +61,7 @@ input[type="checkbox"]{
     left: 18px;
 }
 .antena{
-    background-color: rgb(55, 42, 42);
+    background-color: rgb(67, 6, 6);
     height: 20px;
     width: 60px;
     border-radius: 20px 20px 0 0;
@@ -71,7 +71,7 @@ input[type="checkbox"]{
 
 }
 .a{
-    background-color: rgb(150, 138, 138);
+    background-color: rgb(92, 14, 14);
     height: 70px;
     width: 6px;
     border-radius: 6px;
@@ -123,14 +123,14 @@ border: 10px solid rgb(94, 84, 84);
 background-size: 125px 140px;
 background-image: linear-gradient(
     to left,
-    gray 25px,
-    lightgray 25px,
-    darkgray 50px,
-    black  75px,
-    gray 75px,
-    lightgray 100px,
-    darkgray  100px,
-    black 125px
+    rgb(37, 242, 153) 25px,
+    rgb(25, 19, 209) 25px,
+    rgb(228, 195, 13) 50px,
+    rgb(227, 6, 6)  75px,
+    rgb(7, 160, 226) 75px,
+    rgb(245, 5, 141) 100px,
+    rgb(169, 14, 141)  100px,
+    rgb(9, 225, 52) 125px
 
 );
 animation: move 20s infinite linear;
